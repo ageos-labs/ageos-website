@@ -1,4 +1,4 @@
 # AgeOS
 
-- [Website](https://ageos-labs.com)
+- [Website](https://ageos.dev)
 - [Source code](https://github.com/ageos-labs/ageos-runtime)

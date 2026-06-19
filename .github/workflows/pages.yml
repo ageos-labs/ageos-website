@@ -25,13 +25,13 @@ jobs:
       - name: Build static site artifact
         run: |
           mkdir -p _site
-          cp index.html styles.css script.js README.md _headers _site/
+          cp index.html styles.css script.js README.md _headers _redirects install.sh install.ps1 CNAME _site/
           touch _site/.nojekyll
           if [ -d assets ]; then
             cp -R assets _site/assets
           fi
-          if [ -f CNAME ]; then
-            cp CNAME _site/CNAME
+          if [ -d download ]; then
+            cp -R download _site/download
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

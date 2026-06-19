@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Download AgeOS Runtime for Linux or Windows."
+    >
+    <title>Download AgeOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="../assets/ageos-icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="nav">
+        <a class="brand" href="../" aria-label="AgeOS home">
+          <img class="brand-mark" src="../assets/ageos-icon.png" alt="" width="34" height="34">
+          <span>AgeOS</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="../#docs">Docs</a>
+          <a href="../#enterprise">Enterprise</a>
+          <a class="icon-link" href="https://github.com/ageos-labs/ageos-runtime" rel="noreferrer">
+            <svg class="link-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.86 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.22-3.37-1.22-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.35 1.11 2.92.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.35 9.35 0 0 1 12 5.93c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.18 10.18 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"
+              />
+            </svg>
+            GitHub
+          </a>
+          <a class="icon-link" href="https://discord.gg/skwKqSgvD2" rel="noreferrer">
+            <svg class="link-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M19.54 5.32A17.2 17.2 0 0 0 15.31 4l-.2.38c-.24.45-.45.92-.63 1.4a15.88 15.88 0 0 0-4.96 0 10.5 10.5 0 0 0-.83-1.78 17.1 17.1 0 0 0-4.24 1.32C1.76 9.36 1.03 13.3 1.4 17.17A17.28 17.28 0 0 0 6.59 20c.42-.58.79-1.19 1.1-1.84a10.9 10.9 0 0 1-1.73-.84l.43-.34a12.38 12.38 0 0 0 11.22 0l.43.34c-.55.33-1.13.61-1.74.84.32.65.69 1.26 1.1 1.84a17.23 17.23 0 0 0 5.2-2.83c.44-4.49-.75-8.4-3.06-11.85ZM8.68 14.78c-1 0-1.82-.94-1.82-2.1 0-1.15.8-2.1 1.82-2.1 1.01 0 1.83.95 1.82 2.1 0 1.16-.8 2.1-1.82 2.1Zm6.64 0c-1 0-1.82-.94-1.82-2.1 0-1.15.8-2.1 1.82-2.1 1.01 0 1.83.95 1.82 2.1 0 1.16-.8 2.1-1.82 2.1Z" />
+            </svg>
+            Discord
+          </a>
+        </nav>
+        <a class="button button-small" href="./">Download</a>
+      </header>
+
+      <main>
+        <section class="download-page section-panel" aria-labelledby="download-page-title">
+          <div>
+            <p class="eyebrow">Download</p>
+            <h2 id="download-page-title">Choose your OS.</h2>
+            <!-- <p class="hero-lede">
+              Pick an installer for your machine. These links use the clean AgeOS URLs and redirect to the latest GitHub release artifact.
+            </p> -->
+          </div>
+          <div class="download-card">
+            <form id="download-form" class="download-picker">
+              <label for="download-os">Operating system</label>
+              <div class="download-picker-row">
+                <select id="download-os" name="os" required>
+                  <option value="" selected disabled>Choose Linux or Windows</option>
+                  <option value="linux">Linux</option>
+                  <option value="windows">Windows</option>
+                </select>
+                <button class="button" type="submit">Download</button>
+              </div>
+            </form>
+
+            <div class="os-actions" aria-label="Direct download links">
+              <a class="button button-secondary os-button" href="https://ageos.dev/download/linux">
+                <svg class="os-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 2.6c-2.14 0-3.88 1.86-3.88 4.15 0 1.03.17 1.91.42 2.67-.74.89-1.28 2.01-1.62 3.35L5.6 17.84c-.15.58.12 1.18.65 1.46l2.16 1.13c.48.25 1.07.18 1.48-.17.56.18 1.26.28 2.11.28.84 0 1.55-.1 2.11-.28.41.35 1 .42 1.48.17l2.16-1.13c.53-.28.8-.88.65-1.46l-1.32-5.07c-.34-1.34-.88-2.46-1.62-3.35.25-.76.42-1.64.42-2.67C15.88 4.46 14.14 2.6 12 2.6Zm-1.37 4.3c0-.46.3-.84.67-.84.36 0 .66.38.66.84s-.3.83-.66.83c-.37 0-.67-.37-.67-.83Zm2.07 0c0-.46.3-.84.66-.84.37 0 .67.38.67.84s-.3.83-.67.83c-.36 0-.66-.37-.66-.83Zm-.7 4.36c.56 0 1.1.1 1.6.3-.28.39-.8.66-1.6.66s-1.32-.27-1.6-.66c.5-.2 1.04-.3 1.6-.3Z" />
+                </svg>
+                Linux
+              </a>
+              <a class="button button-secondary os-button" href="https://ageos.dev/download/windows">
+                <svg class="os-icon" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M3 5.2 10.7 4v7.4H3V5.2Zm8.7-1.36L21 2.5v8.9h-9.3V3.84ZM3 12.6h7.7V20L3 18.8v-6.2Zm8.7 0H21v8.9l-9.3-1.34V12.6Z" />
+                </svg>
+                Windows
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

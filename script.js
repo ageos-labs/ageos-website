@@ -28,6 +28,19 @@ if (demoVideo) {
   });
 }
 
+const downloadForm = document.querySelector("#download-form");
+
+downloadForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(downloadForm);
+  const os = formData.get("os")?.toString();
+
+  if (os === "linux" || os === "windows") {
+    window.location.href = `https://ageos.dev/download/${os}`;
+  }
+});
+
 const enterpriseForm = document.querySelector("#enterprise-form");
 
 enterpriseForm?.addEventListener("submit", (event) => {

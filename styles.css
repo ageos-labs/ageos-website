@@ -166,6 +166,13 @@ video {
   box-shadow: none;
 }
 
+.os-icon {
+  width: 1.25em;
+  height: 1.25em;
+  flex: none;
+  fill: currentColor;
+}
+
 .section-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
@@ -429,6 +436,35 @@ p {
   gap: 14px;
 }
 
+.download-page {
+  margin-top: 84px;
+}
+
+.download-card {
+  display: grid;
+  gap: 18px;
+}
+
+.download-picker {
+  display: grid;
+  gap: 12px;
+}
+
+.download-picker-row,
+.os-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+}
+
+.os-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.os-button {
+  min-height: 64px;
+}
+
 .command-block {
   margin: 0;
 }
@@ -487,6 +523,7 @@ label {
 }
 
 input,
+select,
 textarea {
   width: 100%;
   border: 1px solid rgba(148, 163, 184, 0.18);
@@ -497,7 +534,8 @@ textarea {
   font: inherit;
 }
 
-input {
+input,
+select {
   min-height: 48px;
   padding: 0 14px;
 }
@@ -508,6 +546,7 @@ textarea {
 }
 
 input:focus,
+select:focus,
 textarea:focus {
   border-color: rgba(103, 232, 249, 0.62);
   box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.12);
@@ -559,7 +598,9 @@ textarea:focus {
   }
 
   .install-strip,
-  .command-block {
+  .command-block,
+  .download-picker-row,
+  .os-actions {
     grid-template-columns: 1fr;
   }
 
