@@ -37,7 +37,7 @@ downloadForm?.addEventListener("submit", (event) => {
   const os = formData.get("os")?.toString();
 
   if (os === "linux" || os === "windows") {
-    window.location.href = `https://ageos.dev/download/${os}`;
+    window.location.href = `/download/${os}`;
   }
 });
 
